@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ValTestAT>
+  <Settings>
+    <URL>https://stg-cd.sanoficonecta.com.br</URL>
+    <Browser>Chrome</Browser>
+    <TestType>RegressionTest</TestType>
+    <IsReport>Y</IsReport>
+    <BuildName>MandarimOriental</BuildName>
+    <UserName>CesarBerbel</UserName>
+  </Settings>
+</ValTestAT>
