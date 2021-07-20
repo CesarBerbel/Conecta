@@ -9,7 +9,7 @@ namespace BaseProject.Steps
     {
 		[When(@"escolho tipo de HCP ""(.*)""")]
 		public void QuandoEscolhoTipoDeHCP(string tipo)
-		{
+		{  
 			GetInstance<CriarConta>().SelecionarTipoHCP(tipo);
 		}
 

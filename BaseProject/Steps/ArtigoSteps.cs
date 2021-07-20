@@ -9,7 +9,7 @@ namespace BaseProject.Steps
     {
 		[Given(@"que eu acesso artigo ""(.*)""")]
 		public void DadoEuAcessoOArtigo(string artigo)
-		{
+		{  
 			GetInstance<ArtigoPage>().AcessarArtigo(artigo);
 			GetInstance<LoginModal>().RealizarPreLogin();
 		}

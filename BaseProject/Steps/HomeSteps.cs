@@ -11,9 +11,10 @@ namespace BaseProject.Steps
 		public void EntaoDevoVerMeuNomeNoMenuProfile(string nome)
 		{
 			GetInstance<HomePage>().VerificarNomeMensagem(nome);
-		}
+        }
 
-		[Given(@"eu clico no menu profile para expandir")]
+
+        [Given(@"eu clico no menu profile para expandir")]
 		public void DadoEuClicoNoMenuProfileParaExpandir()
 		{
 			GetInstance<HomePage>().ClicarNoMenuProfile();
@@ -38,5 +39,11 @@ namespace BaseProject.Steps
 			GetInstance<HomePage>().ClicarCriarConta();
 		}
 
-	}
+        [When(@"eu clico em Meu Perfil")]
+        public void QuandoEuClicoEmMeuPerfil()
+        {
+            GetInstance<HomePage>().ClicarMenuMeuPerfil();
+        }
+
+    }
 }

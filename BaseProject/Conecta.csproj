@@ -59,6 +59,9 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.1.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="SeleniumExtras.WaitHelpers, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -99,6 +102,8 @@
     <Compile Include="Pages\Home\HomePageMethods.cs" />
     <Compile Include="Pages\Artigo\ArtigoPageMethods.cs" />
     <Compile Include="Pages\Login\LoginModalMethods.cs" />
+    <Compile Include="Pages\MeuPerfil\MeuPerfilPageElements.cs" />
+    <Compile Include="Pages\MeuPerfil\MeuPerfilPageMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\CriarContaSteps.cs" />
     <Compile Include="Steps\CampanhasSteps.cs" />
@@ -106,11 +111,14 @@
     <Compile Include="Steps\HomeSteps.cs" />
     <Compile Include="Steps\ComumSteps.cs" />
     <Compile Include="Steps\ArtigoSteps.cs" />
+    <Compile Include="Steps\MeuPerfilSteps.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Features\CriarConta.feature" />
     <None Include="Features\Campanha.feature" />
     <None Include="Features\Artigo.feature" />
+    <None Include="Features\MeuPerfil.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -137,9 +145,11 @@
     <Error Condition="!Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.8.14\build\SpecFlow.Tools.MsBuild.Generation.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.Tools.MsBuild.Generation.3.8.14\build\SpecFlow.Tools.MsBuild.Generation.targets'))" />
     <Error Condition="!Exists('..\packages\SpecFlow.MsTest.3.8.14\build\SpecFlow.MsTest.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.MsTest.3.8.14\build\SpecFlow.MsTest.props'))" />
     <Error Condition="!Exists('..\packages\SpecFlow.MsTest.3.8.14\build\SpecFlow.MsTest.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.MsTest.3.8.14\build\SpecFlow.MsTest.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.91.0.4472.10100\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.91.0.4472.10100\build\Selenium.WebDriver.ChromeDriver.targets'))" />
   </Target>
   <Import Project="..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" />
   <Import Project="..\packages\SpecFlow.3.8.14\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.3.8.14\build\SpecFlow.targets')" />
   <Import Project="..\packages\SpecFlow.Tools.MsBuild.Generation.3.8.14\build\SpecFlow.Tools.MsBuild.Generation.targets" Condition="Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.8.14\build\SpecFlow.Tools.MsBuild.Generation.targets')" />
   <Import Project="..\packages\SpecFlow.MsTest.3.8.14\build\SpecFlow.MsTest.targets" Condition="Exists('..\packages\SpecFlow.MsTest.3.8.14\build\SpecFlow.MsTest.targets')" />
+  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.91.0.4472.10100\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.91.0.4472.10100\build\Selenium.WebDriver.ChromeDriver.targets')" />
 </Project>

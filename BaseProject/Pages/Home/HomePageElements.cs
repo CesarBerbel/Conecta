@@ -8,5 +8,7 @@
 		private readonly string MensagemBoasVindas = "//h3";
 		private readonly string ItensSalvosLink = "//a[@class='c-text menu-profile__panel-item menu-profile__panel-item--link menu-profile__panel-item--text-left']";
 		private readonly string BotaoCriarConta = "btnSignUp";
-	}
+        private readonly string MenuMeuPerfil = "Meu Perfil";
+
+    }
 }

@@ -12,9 +12,10 @@ namespace BaseProject.Steps
         {
 			NavigateToHome();
 			GetInstance<LoginModal>().RealizarPreLogin();
-		}
+        }
 
-		[Given(@"eu logo por e-mail ""(.*)"" e a senha ""(.*)""")]
+
+        [Given(@"eu logo por e-mail ""(.*)"" e a senha ""(.*)""")]
 		public void DadoEuLogoComOE_MailEASenha(string email, string senha)
 		{
 			GetInstance<HomePage>().ClicarNoMenuProfile();
