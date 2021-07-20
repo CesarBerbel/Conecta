@@ -130,7 +130,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Then("devo ver meu nome \"farmaceutico teste\" no menu profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
 #line 11
- testRunner.When("eu acesso a campanha \"pasteur\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+ testRunner.When("eu acesso a campanha \"/pasteur\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 12
  testRunner.When("eu clico em Compartilhar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
