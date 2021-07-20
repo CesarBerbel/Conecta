@@ -9,7 +9,7 @@ namespace BaseProject.Steps
     {
 		[Then(@"eu devo ser direcionado para página de Favoritos")]
 		public void EntaoEuDevoSerDirecionadoParaPaginaDeFavoritos()
-		{
+		{ 
 			GetInstance<FavoritosPage>().VerificarEstaEmFavoritos();
 		}
 

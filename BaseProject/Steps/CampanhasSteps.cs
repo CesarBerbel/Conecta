@@ -9,7 +9,7 @@ namespace BaseProject.Steps
     {
         [When(@"eu acesso a campanha ""(.*)""")]
         public void QuandoEuAcessoACampanha(string url)
-        {
+        {  
 			GetInstance<CampanhaPage>().AcessarCampanha(url);
 		}
     }

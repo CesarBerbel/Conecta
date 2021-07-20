@@ -52,7 +52,7 @@ namespace ValTestAT.Base
 
 		public static void FinalizeTests()
 		{
-			DriverContext.Driver.Quit();
+           //  DriverContext.Driver.Quit();
 		}
 	}
 }

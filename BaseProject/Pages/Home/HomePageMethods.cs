@@ -33,5 +33,10 @@ namespace ValTestAT
 		{
 			Click(FindById(BotaoCriarConta));
 		}
+
+        public void ClicarMenuMeuPerfil()
+        {
+            Click(FindByPartialLinkText(MenuMeuPerfil));
+        }
 	}
 }
