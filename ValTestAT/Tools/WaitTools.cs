@@ -21,7 +21,7 @@ namespace ValTestAT.Tools
 				else
 				{
 					result = DriverContext.Driver.Url == url;
-				}				
+				}
 				cont = cont + 1;
 				Thread.Sleep(TimeSpan.FromMilliseconds(100));
 			}
@@ -43,19 +43,28 @@ namespace ValTestAT.Tools
 			return !result;
 		}
 
-		public static bool WaitForVisibility(IWebElement element, int timeout = 500)
+		public static IWebElement WaitForVisibility(string by, string element, int timeout = 500)
 		{
-			int cont = 0;
-			bool result = true;
-			while (result & (cont < timeout))
+			IWebElement _meliante;
+			switch (by)
 			{
-				result = IsVisible(element);
-				cont = cont + 1;
-				Thread.Sleep(TimeSpan.FromMilliseconds(100));
+				case "xptah":
+					_meliante = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(element)));
+					break;
+				case "id":
+					_meliante = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id(element)));
+					break;
+				case "name":
+					_meliante = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Name(element)));
+					break;
+				case "class":
+					_meliante = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.ClassName(element)));
+					break;
+				default:
+					_meliante = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath(element)));
+					break;
 			}
-
-			Assert.IsFalse(result, $"The element {element.TagName} still not visible", element.TagName);
-			return !result;
+			return _meliante;
 		}
 	}
 }

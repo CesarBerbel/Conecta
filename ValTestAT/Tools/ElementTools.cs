@@ -42,6 +42,12 @@ namespace ValTestAT.Tools
 			_meliante.SendKeys(text);
 		}
 
+		public static void ReplaceTextInto(IWebElement _meliante, string text)
+		{
+			_meliante.Clear();
+			_meliante.SendKeys(text);
+		}
+
 		public static string GetText(IWebElement _meliante)
 		{
 			WaitTools.WaitForTextNotEmpty(_meliante);
@@ -65,11 +71,6 @@ namespace ValTestAT.Tools
 			act.MoveToElement(_meliante);
 			act.Click(_meliante);
 			act.Perform();
-		}
-
-		public static bool IsVisible(IWebElement _meliante)
-		{
-			return _meliante.Displayed;
 		}
 	}
 }
