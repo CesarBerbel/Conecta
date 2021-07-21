@@ -148,7 +148,7 @@ testRunner.And("marco a opcao Li e concordo com os Termos e Condições", ((stri
 testRunner.And("eu clico em Continuar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 17
-testRunner.And("Eu preencho o campo Nome com \"Doctor Angry\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("Eu preencho o campo Nome com \"Angry\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 18
 testRunner.And("preencho o campo Sobrenome com \"Birds\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");

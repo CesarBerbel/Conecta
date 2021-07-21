@@ -14,7 +14,7 @@ E preencho o campo Número do registro com registro aleatório
 E preencho o Email com email aleatório
 E marco a opcao Li e concordo com os Termos e Condições
 E eu clico em Continuar
-E Eu preencho o campo Nome com "Doctor Angry"
+E Eu preencho o campo Nome com "Angry"
 E preencho o campo Sobrenome com "Birds"
 E eu preencho o Celular com "7912345678"
 E preencho o campo Adicionar Senha com "123456"

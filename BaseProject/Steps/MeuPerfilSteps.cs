@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
+using ValTestAT;
 using ValTestAT.Base;
 
 namespace BaseProject.Steps
@@ -24,6 +25,13 @@ namespace BaseProject.Steps
             GetInstance<MeuPerfilPage>().ClicarMinhaConta();
         }
 
+        [When(@"eu altero o Celular para ""(.*)""")]
+        public void QuandoEuAlteroOCelularPara(string cel)
+        {
+            GetInstance<MeuPerfilPage>().PreencherCelular(cel);
+        }
+
+
         [When(@"eu altero o Celular para um numero valido")]
         public void QuandoEuAlteroOCelularParaUmNumeroValido()
         {
@@ -41,6 +49,31 @@ namespace BaseProject.Steps
         {
             GetInstance<MeuPerfilPage>().VerificarMensagemAlteracao(msg);
         }
+
+        [When(@"altero o Email com email válido")]
+        public void QuandoAlteroOEmailComEmailValido()
+        {
+           GetInstance<MeuPerfilPage>().PreencherEmailAleatorio();
+        }
+
+        [When(@"altero o Email para ""(.*)""")]
+        public void QuandoAlteroOEmailPara(string email)
+        {
+            GetInstance<MeuPerfilPage>().PreencherEmail(email);
+        }
+
+        //[Then(@"devo ver a mensagem de validação de email ""(.*)""")]
+        //public void EntaoDevoVerAMensagemDeValidacaoDeEmail(string msg)
+        //{
+        //    GetInstance<MeuPerfilPage>().ValidarMensagemEmail(msg);
+        //}
+
+
+        //[Then(@"eu nao devo ver o botao Salvar")]
+        //public void EntaoEuNaoDevoVerOBotaoSalvar()
+        //{
+        //    GetInstance<MeuPerfilPage>().VerificarVisibilidadeBotao();
+        //}
 
     }
 }
