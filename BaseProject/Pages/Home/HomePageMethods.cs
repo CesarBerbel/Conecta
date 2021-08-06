@@ -9,17 +9,32 @@ namespace ValTestAT
 			Click(FindByXPath(ProfileMenu));
 		}
 
-		public void ClicarEntrar()
+        public void ClicarMenuProfileSoftlogin()
+        {
+            Click(FindByXPath(ProfileMenuSoftLogin));
+        }
+
+        public void ClicarEntrar()
 		{
 			Click(FindById(BotaoEntrar));
 		}
 
-		public void VerificarNomeMensagem(string nome)
-		{
-			CheckElementTextContains(FindByXPath(MensagemBoasVindas), nome);
-		}
+        public void ClicarMenuMeuPerfil()
+        {
+            Click(FindByPartialLinkText(MenuMeuPerfil));
+        }
 
-		public void ClicarItensSalvos()
+        public void ClicarEncerrarSessao()
+        {
+            Click(FindByXPath(MenuEncerrarSessao));
+        }
+
+        public void VerificarNomeMensagem(string nome)
+		{
+            CheckElementTextContains(FindByXPath(string.Format(MensagemBoasVindas, nome)), nome);
+        }
+
+        public void ClicarItensSalvos()
 		{
 			Click(FindByXPath(ItensSalvosLink));
 		}
@@ -33,10 +48,18 @@ namespace ValTestAT
 		{
 			Click(FindById(BotaoCriarConta));
 		}
-
-        public void ClicarMenuMeuPerfil()
+        public void ClicarCriarContaValidado()
         {
-            Click(FindByPartialLinkText(MenuMeuPerfil));
+            Click(FindByXPath(BotaoCriarContaValidado));
         }
-	}
+        public void ClicarCalendario(string cal)
+        {
+            Click(FindByXPath(string.Format(MenuCalendario, cal)));
+        }
+
+        public void ClicarMenuBusca()
+        {
+            Click(FindByXPath(MenuBusca));
+        }
+    }
 }

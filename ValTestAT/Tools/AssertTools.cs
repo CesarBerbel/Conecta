@@ -14,7 +14,7 @@ namespace ValTestAT.Tools
 			Assert.IsTrue(WaitTools.WaitForURL(url), $"The url should be '{url}' but still '{DriverContext.Driver.Url}' in the browser"); ;
 		}
 
-		public static void CheckElementText(IWebElement element, string text)
+		public static void CheckIfListContainsText(IWebElement element, string text)
 		{
 			WaitTools.WaitForTextNotEmpty(element);
 			Assert.IsTrue(element.Text == text, $"The component should show the text '{text}' but is showing '{element.Text}'"); ;
@@ -26,7 +26,7 @@ namespace ValTestAT.Tools
 			Assert.IsTrue(element.Text.Contains(text), $"The component should contains '{text}' but is showing '{element.Text}'"); ;
 		}
 
-		public static void CheckIfListMatch(string[] shouldBe, IReadOnlyList<IWebElement> fromElements)
+		public static void CheckIfListMatch(IReadOnlyList<IWebElement> fromElements, string[] shouldBe)
 		{
 			Assert.AreEqual(shouldBe.Length, fromElements.Count, $"The count of the lists are not the same. Should be {shouldBe.Length} but is coming {fromElements.Count} elements. Please check the elements locator");
 

@@ -69,15 +69,19 @@ namespace ValTestAT.Tools
 		//
 		// MULTIPLE ELEMENTS MANIPULATION
 		//
-		private static IReadOnlyList<IWebElement> FindElements(By by)
+		private static IReadOnlyList<IWebElement> FindElements(By by, bool waitfor = true)
 		{
-			wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(by));
-			return DriverContext.Driver.FindElements(by);
+            if (waitfor)
+            {
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(by));
+
+            }
+            return DriverContext.Driver.FindElements(by);
 		}
 
-		public static IReadOnlyList<IWebElement> ElementsByXPath(string locator)
+		public static IReadOnlyList<IWebElement> ElementsByXPath(string locator, bool waitfor = true)
 		{
-			return FindElements(By.XPath(locator));
+			return FindElements(By.XPath(locator), waitfor);
 		}
 
 		public static IReadOnlyList<IWebElement> ElementsByCss(string locator)

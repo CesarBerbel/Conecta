@@ -88,6 +88,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Hooks\Hooks.cs" />
+    <Compile Include="Pages\Busca\BuscaPageElements.cs" />
+    <Compile Include="Pages\Busca\BuscaPageMethods.cs" />
+    <Compile Include="Pages\Calendario\CalendarioPageElements.cs" />
+    <Compile Include="Pages\Calendario\CalendarioPageMethods.cs" />
+    <Compile Include="Pages\Treinamento\TreinamentoPageElements.cs" />
+    <Compile Include="Pages\Treinamento\TreinamentoPageMethods.cs" />
+    <Compile Include="Pages\Evento\EventoPageElements.cs" />
+    <Compile Include="Pages\Evento\EventoPageMethods.cs" />
     <Compile Include="Pages\Campanha\CampanhaPageElements.cs" />
     <Compile Include="Pages\Artigo\ArtigoPageElements.cs" />
     <Compile Include="Pages\Campanha\CampanhaPageMethods.cs" />
@@ -105,6 +113,12 @@
     <Compile Include="Pages\MeuPerfil\MeuPerfilPageElements.cs" />
     <Compile Include="Pages\MeuPerfil\MeuPerfilPageMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\BuscaSteps.cs" />
+    <Compile Include="Steps\CalendarioSteps.cs" />
+    <Compile Include="Steps\TreinamentoSteps.cs" />
+    <Compile Include="Steps\EventoSteps.cs" />
+    <Compile Include="Steps\RecuperarSenhaSteps.cs" />
+    <Compile Include="Steps\LoginSteps.cs" />
     <Compile Include="Steps\CriarContaSteps.cs" />
     <Compile Include="Steps\CampanhasSteps.cs" />
     <Compile Include="Steps\FavoritosSteps.cs" />
@@ -115,6 +129,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Features\Busca.feature" />
+    <None Include="Features\Calendario.feature" />
+    <None Include="Features\Treinamento.feature" />
+    <None Include="Features\Evento.feature" />
+    <None Include="Features\RecuperarSenha.feature" />
+    <None Include="Features\Login.feature" />
     <None Include="Features\CriarConta.feature" />
     <None Include="Features\Campanha.feature" />
     <None Include="Features\Artigo.feature" />
