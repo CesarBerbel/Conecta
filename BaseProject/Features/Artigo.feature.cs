@@ -93,13 +93,13 @@ namespace BaseProject.Features
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Adicionar e Retirar Artigo dos favoritos")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Acessar artigo exclusivo")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Artigo")]
-        public virtual void AdicionarERetirarArtigoDosFavoritos()
+        public virtual void AcessarArtigoExclusivo()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar e Retirar Artigo dos favoritos", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Acessar artigo exclusivo", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -121,37 +121,191 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 8
- testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+testRunner.Given("que eu acesso artigo \"/boletim-informacoes-medicas-servico-de-informacao-sobre-va" +
+                        "cinacao-siv\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 9
- testRunner.And("eu logo por e-mail \"testemedico@grr.la\" e a senha \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Médica, Farmacêutica, E" +
+                        "nfermagem e Odontológica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 10
- testRunner.Then("devo ver meu nome \"Medico Teste\" no menu profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.When("eu valido com \"Dentista (CRO),BA,6666666,dentista06@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 11
- testRunner.When("eu acesso o artigo \"/4-consenso-brasileiro-rinites\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.And("preencho o campo Adicionar Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 12
- testRunner.And("eu clico em Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.When("clico em Finalizar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 13
- testRunner.Then("eu devo ver a mensagem dos favoritos \"Artigo adicionado à sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+testRunner.Then("eu visualizo o artigo \"/boletim-informacoes-medicas-servico-de-informacao-sobre-v" +
+                        "acinacao-siv\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 14
- testRunner.When("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Acessar artigo exclusivo, utilizando perfil sem permissão")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Artigo")]
+        public virtual void AcessarArtigoExclusivoUtilizandoPerfilSemPermissao()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Acessar artigo exclusivo, utilizando perfil sem permissão", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 15
- testRunner.And("eu clico em Itens Salvos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
 #line 16
- testRunner.Then("eu devo ser direcionado para página de Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.Given("que eu acesso artigo \"/Hipotireoidismo-e-riscos-associados-modulo-III-dislipidemi" +
+                        "a\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 17
- testRunner.When("eu clico em Remover item dos favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 18
- testRunner.Then("eu devo ver a mensagem dos favoritos \"Item removido da sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+testRunner.When("eu valido com \"Farmacêutico (CRF),BA,4444444,farma04@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 19
+testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo é exclusivo para Médic" +
+                        "o.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Acessar artigo exclusivo, com Soft Login")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Artigo")]
+        public virtual void AcessarArtigoExclusivoComSoftLogin()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Acessar artigo exclusivo, com Soft Login", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 21
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 22
+testRunner.Given("que eu acesso artigo \"/Hipotireoidismo-e-riscos-associados-modulo-III-dislipidemi" +
+                        "a\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line hidden
+#line 23
+testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line hidden
+#line 24
+testRunner.When("eu valido com \"Farmacêutico (CRF),BA,4444444,farma04@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 25
+testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo é exclusivo para Médic" +
+                        "o.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line hidden
+#line 26
+testRunner.When("eu clico em Ir para a página Inicial", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 27
+testRunner.And("eu acesso o artigo \"/allenasal-na-rinite-alergica-pediatrica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 28
+testRunner.Then("eu visualizo o artigo \"/allenasal-na-rinite-alergica-pediatrica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Adicionar e Retirar Artigo dos favoritos")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Artigo")]
+        public virtual void AdicionarERetirarArtigoDosFavoritos()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar e Retirar Artigo dos favoritos", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 30
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 31
+testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line hidden
+#line 32
+testRunner.And("eu logue como \"Medico\" com o e-mail \"testemedico@grr.la\" e a senha \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 33
+testRunner.Then("devo ver meu nome \"Medico\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+#line hidden
+#line 34
+testRunner.When("eu acesso o artigo \"/4-consenso-brasileiro-rinites\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 35
+testRunner.And("eu clico em Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 36
+testRunner.Then("eu devo ver a mensagem dos favoritos \"Artigo adicionado à sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line hidden
+#line 37
+testRunner.When("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 38
+testRunner.And("eu clico em Itens Salvos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 39
+testRunner.Then("eu devo ser direcionado para página de Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+#line hidden
+#line 40
+testRunner.When("eu clico em Remover item dos favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 41
+testRunner.Then("eu devo ver a mensagem dos favoritos \"Item removido da sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -165,7 +319,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Compartilhar Artigo nas redes sociais e Copiar link", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 20
+#line 43
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -185,76 +339,23 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 21
- testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line 44
+testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 22
- testRunner.And("eu logo por e-mail \"testemedico@grr.la\" e a senha \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line 45
+testRunner.And("eu logue como \"Medico\" com o e-mail \"testemedico@grr.la\" e a senha \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 23
- testRunner.Then("devo ver meu nome \"Medico Teste\" no menu profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
-#line hidden
-#line 24
- testRunner.When("eu acesso o artigo \"/4-consenso-brasileiro-rinites\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
-#line 25
- testRunner.And("eu clico em Compartilhar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 26
- testRunner.Then("devo ver os links \"Whatsapp,Facebook,LinkedIn,Copiar link\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Acessar artigo exclusivo")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Artigo")]
-        public virtual void AcessarArtigoExclusivo()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Acessar artigo exclusivo", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 28
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 29
-testRunner.Given("que eu acesso artigo \"/boletim-informacoes-medicas-servico-de-informacao-sobre-va" +
-                        "cinacao-siv\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
-#line hidden
-#line 30
-testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Médica, Farmacêutica, E" +
-                        "nfermagem e Odontológica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
-#line hidden
-#line 31
-testRunner.When("eu valido com \"Dentista (CRO),BA,21660,jose123@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
-#line 32
-testRunner.And("eu vejo a mensagem \"Olá, identificamos que você já tem uma conta\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 33
-testRunner.And("eu me logando com \"dentista@servidor.com\" e \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line 46
+testRunner.Then("devo ver meu nome \"Medico\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
 #line 47
-testRunner.Then("eu visualizo o artigo \"/boletim-informacoes-medicas-servico-de-informacao-sobre-v" +
-                        "acinacao-siv\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+testRunner.When("eu acesso o artigo \"/4-consenso-brasileiro-rinites\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 48
+testRunner.And("eu clico em Compartilhar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 49
+testRunner.Then("devo ver os links \"Whatsapp,Facebook,LinkedIn,Copiar link\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
             this.ScenarioCleanup();

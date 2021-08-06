@@ -8,12 +8,17 @@ namespace ValTestAT
 	{
 		public void ClicarFavoritos()
 		{
-			var ele = FindByXPath(IconeFavoritos);
-			while (ele.GetAttribute("class").Contains("off"))
-			{
-				PerformClick(ele);
-			}
-		}
+            var ele = FindByXPath(IconeFavoritos);
+            int valor = 1;
+
+            
+            while ((ele.GetAttribute("class").Contains("off")) & (valor <= 5))
+            {
+                PerformClick(ele);
+                Thread.Sleep(TimeSpan.FromMilliseconds(100));
+                valor++;
+            }         
+        }
 
 		public void ClicarCompartilhar()
 		{
@@ -22,13 +27,14 @@ namespace ValTestAT
 
 		public void VerificarAdcionarFavoritosMensagem(string msg)
 		{
-			CheckElementText(FindByXPath(MensagemAdcionado), msg);
+			CheckIfListContainsText(FindByXPath(MensagemAdcionado), msg);
 			Thread.Sleep(TimeSpan.FromSeconds(8));
 		}
 
 		public void VerificarLinksRedeSocial(string links)
 		{
-			CheckIfListMatch(links.Split(','), ElementsByXPath(LinksRedesSociais));
+			CheckIfListMatch(ElementsByXPath(LinksRedesSociais), links.Split(','));
 		}
-	}
+             
+    }
 }

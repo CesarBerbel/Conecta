@@ -9,9 +9,9 @@ namespace BaseProject.Steps
     {
 		[Given(@"que eu acesso artigo ""(.*)""")]
 		public void DadoEuAcessoOArtigo(string artigo)
-		{  
-			GetInstance<ArtigoPage>().AcessarArtigo(artigo);
-			GetInstance<LoginModal>().RealizarPreLogin();
+		{
+            GetInstance<ArtigoPage>().AcessarArtigo(artigo);
+            GetInstance<LoginModal>().RealizarPreLogin();
 		}
 
 		[When(@"eu acesso o artigo ""(.*)""")]
@@ -38,5 +38,17 @@ namespace BaseProject.Steps
 			GetInstance<ArtigoPage>().VerificarArtigo(artigo);
 		}
 
-	}
+        [Then(@"devo ver a mensagem de acesso exclusivo ""(.*)""")]
+        public void EntaoDevoVerAMensagemDeAcessoExclusivo(string msg)
+        {
+            GetInstance<ArtigoPage>().VerificarMsgConteudoExclusivoOops(msg);
+        }
+
+        [When(@"eu clico em Ir para a página Inicial")]
+        public void QuandoEuClicoEmIrParaAPaginaInicial()
+        {
+            GetInstance<ArtigoPage>().ClicarVoltarHome();
+        }
+
+    }
 }

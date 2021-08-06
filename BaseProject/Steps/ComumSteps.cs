@@ -13,18 +13,37 @@ namespace BaseProject.Steps
 			NavigateToHome();
 			GetInstance<LoginModal>().RealizarPreLogin();
         }
+        [When(@"preencho o campo Número do registro com ""(.*)""")]
+        public void QuandoPreenchoOCampoNumeroDoRegistroCom(string numRegistro)
+        {
+            GetInstance<LoginModal>().PreencherRegistro(numRegistro);
+        }
 
-
-        [Given(@"eu logo por e-mail ""(.*)"" e a senha ""(.*)""")]
-		public void DadoEuLogoComOE_MailEASenha(string email, string senha)
+        [Given(@"eu logue como ""(.*)"" com o e-mail ""(.*)"" e a senha ""(.*)""")]
+        public void DadoEuLogoComOE_MailEASenha(string nome, string email, string senha)
 		{
 			GetInstance<HomePage>().ClicarNoMenuProfile();
 			GetInstance<HomePage>().ClicarEntrar();
-			GetInstance<LoginModal>().LogarPorEmail(email, senha);
+			GetInstance<LoginModal>().LogarPorEmail(nome, email, senha);
 		}
 
-		[When(@"eu me logando com ""(.*)"" e ""(.*)""")]
-		public void QuandoEuMeLogandoComE(string email, string senha)
+        [When(@"eu logo pelo registro com ""(.*)""")]
+        public void QuandoEuLogoPeloRegistroCom(string user)
+        {
+            GetInstance<HomePage>().ClicarNoMenuProfile();
+            GetInstance<HomePage>().ClicarEntrar();
+            GetInstance<LoginModal>().LogarPorRegistro(user);
+        }
+
+        [When(@"eu logo pelo email com ""(.*)"" e ""(.*)""")]
+        public void QuandoEuLogoPeloEmailComE(string email, string senha)
+        {
+            GetInstance<LoginModal>().LogarComEmail(email, senha);
+        }
+
+
+        [When(@"eu me logo com ""(.*)"" e ""(.*)""")]
+		public void QuandoEuMeLogoComE(string email, string senha)
 		{
 			GetInstance<LoginModal>().LogarValidacao(email, senha);
 		}

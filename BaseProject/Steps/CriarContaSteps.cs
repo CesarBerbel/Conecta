@@ -31,16 +31,17 @@ namespace BaseProject.Steps
 			GetInstance<CriarConta>().PreencherEmailAleatorio();
 		}
 
-		[When(@"marco a opcao Li e concordo com os Termos e Condições")]
+        [When(@"preencho o campo email com ""(.*)""")]
+        public void QuandoPreenchoOCampoEmailCom(string email)
+        {
+            GetInstance<CriarConta>().PreencherCampoEmail(email);
+        }
+
+
+        [When(@"marco a opcao Li e concordo com os Termos e Condições")]
 		public void QuandoMarcoAOpcaoLiEConcordoComOsTermosECondicoes()
 		{
 			GetInstance<CriarConta>().AceitarTermosECondicoes();
-		}
-
-		[When(@"eu clico em Continuar")]
-		public void QuandoEuClicoEmContinuar()
-		{
-			GetInstance<CriarConta>().ClicarContinuar();
 		}
 
 		[When(@"Eu preencho o campo Nome com ""(.*)""")]
@@ -73,7 +74,14 @@ namespace BaseProject.Steps
 			GetInstance<CriarConta>().PreencherRepetirSenha(senha);
 		}
 
-		[When(@"clico em Finalizar")]
+        [When(@"clico em Prosseguir")]
+        public void QuandoClicoEmProsseguir()
+        {
+            GetInstance<LoginModal>().ClicarEmProsseguir();
+        }
+
+        [When(@"clico em Continuar")]          
+        [When(@"clico em Finalizar")]
 		public void QuandoClicoEmFinalizar()
 		{
 			GetInstance<CriarConta>().ClicarContinuar();
@@ -85,10 +93,55 @@ namespace BaseProject.Steps
 			GetInstance<CriarConta>().VerificarMensagemSucesso(msg);
 		}
 
-		[When(@"eu valido com ""(.*)""")]
+        [Then(@"devo ver as mensagens de erro ""(.*)""")]
+        public void EntaoDevoVerAsMensagensDeErro(string msg)
+        {
+            GetInstance<CriarConta>().VerificarMensagemObrigatoria(msg);
+        }
+
+
+        [When(@"eu valido com ""(.*)""")]
 		public void QuandoEuValidoCom(string userString)
 		{
 			GetInstance<CriarConta>().ValidarUsuario(userString);
 		}
-	}
+
+        [When(@"preencho o Cadastro completo com ""(.*)""")]
+        public void QuandoPreenchoOCadastroCompletoCom(string userString)
+        {
+            GetInstance<CriarConta>().CadastrarContaCompleta(userString);
+        }
+
+        [When(@"preencho os dados iniciais do Cadastro com ""(.*)""")]
+        public void QuandoPreenchoOsDadosIniciaisDoCadastroCom(string userString)
+        {
+            GetInstance<CriarConta>().IniciarCadastroConta(userString);
+        }
+
+        [When(@"preencho o Cadastro com registro e email aleatórios ""(.*)""")]
+        public void QuandoPreenchoOCadastroComRegistroEEmailAleatorios(string userString)
+        {
+            GetInstance<CriarConta>().IniciarCadastroContaAleatorio(userString);
+        }
+
+        [When(@"preencho os dados finais do cadastro com ""(.*)""")]
+        public void QuandoPreenchoOsDadosFinaisDoCadastroCom(string userString)
+        {
+            GetInstance<CriarConta>().FinalizarCadastroConta(userString);
+        }
+
+
+        [Then(@"eu devo ver a mensagem de finalizacao de cadastro ""(.*)""")]
+        public void EntaoEuDevoVerAMensagemDeFinalizacaoDeCadastro(string msg)
+        {
+            GetInstance<CriarConta>().VerificarMensagemFinalCadastro(msg);
+        }
+
+        [When(@"preencho o email aleatório")]
+        public void QuandoPreenchoOEmailAleatorio()
+        {
+            GetInstance<CriarConta>().PreencherEmailAleatorio();
+        }
+
+    }
 }

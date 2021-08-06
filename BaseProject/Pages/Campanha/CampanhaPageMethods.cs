@@ -1,4 +1,8 @@
-﻿using ValTestAT.Base;
+﻿using System;
+using System.Threading;
+using ValTestAT.Base;
+using ValTestAT.Config;
+using ValTestAT.Tools;
 
 namespace ValTestAT
 {
@@ -9,5 +13,20 @@ namespace ValTestAT
 			NavigateTo(BaseUrl + url);
 			CheckForURL(BaseUrl + url);
 		}
-	}
+        public void ClicarBotaoFechar()
+        {
+            Click(WaitTools.WaitForVisibility("xpath", BotaoFechar));
+
+        }
+        public void VerificarMensagemContaIdentificada(string msg)
+        {
+            CheckIfListContainsText(FindByXPath(MsgContaIdentificada), msg);
+        }
+
+        public void VerificarCampanha(string campanha)
+        {
+            CheckForURL(BaseUrl + campanha);
+        }
+               
+    }
 }
