@@ -43,5 +43,10 @@ namespace ValTestAT
             Click(FindById(BotaoVoltarHome));
         }
 
+        public void VerificarFavoritos(string favoritos)
+        {
+            CheckForURL(BaseUrl + favoritos);
+        }
+
     }
 }

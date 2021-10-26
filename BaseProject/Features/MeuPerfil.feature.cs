@@ -712,7 +712,7 @@ testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((Tec
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 129
-testRunner.When("escolho tipo de HCP \"Dentista (CRO)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("escolho tipo de HCP \"Medico (CRM)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 130
 testRunner.And("escolho o Estado \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -730,7 +730,7 @@ testRunner.And("marco a opcao Li e concordo com os Termos e Condições", ((stri
 testRunner.And("clico em Continuar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 135
-testRunner.When("Eu preencho o campo Nome com \"Dentista\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("Eu preencho o campo Nome com \"Medico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 136
 testRunner.And("preencho o campo Sobrenome com \"Automacao\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -765,7 +765,7 @@ testRunner.Then("devo ver a Mensagem de personalização da conta \"Finalize a p
                         "conta. Selecione uma especialidade primária e selecione um ou mais interesses.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
 #line 146
-testRunner.When("eu escolho a Especialidade primária \"Endodontia\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu escolho a Especialidade primária \"Cardiologia\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 147
 testRunner.And("eu escolho a Especialidade secundária \"Pediatria\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -1122,18 +1122,6 @@ testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table
 #line 223
 testRunner.Then("devo ver a mensagem de obrigatoriedade \"Cidade inválida\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 224
-testRunner.When("Preencho o campo cidade com \"Cabi\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
-#line 225
-testRunner.And("seleciono a cidade \"Cabixi - RO\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 226
-testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 227
-testRunner.Then("devo ver a mensagem de obrigatoriedade \"Local inválido\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
-#line hidden
             }
             this.ScenarioCleanup();
         }
@@ -1146,7 +1134,7 @@ testRunner.Then("devo ver a mensagem de obrigatoriedade \"Local inválido\"", ((
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validar a obrigatoriedade do campo Empresa onde trabalha", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 229
+#line 225
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1166,31 +1154,31 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 230
+#line 226
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 231
+#line 227
 testRunner.And("eu logue como \"Farma\" com o e-mail \"farma03@teste.com\" e a senha \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 232
+#line 228
 testRunner.When("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 233
+#line 229
 testRunner.And("eu clico em Meu Perfil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 234
+#line 230
 testRunner.Then("devo ser direcionado para pagina de Perfil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 235
+#line 231
 testRunner.When("eu clico em Minha conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 236
+#line 232
 testRunner.And("eu altero o Celular para \"(71) 9871-6550\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 237
+#line 233
 testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 238
+#line 234
 testRunner.Then("devo ver a mensagem de obrigatoriedade \"Selecione a empresa onde trabalha\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }

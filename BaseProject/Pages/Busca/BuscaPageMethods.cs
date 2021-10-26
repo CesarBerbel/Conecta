@@ -20,7 +20,9 @@ namespace ValTestAT
 
         public void VerificarResultadoDaBusca(string reg)
         {
-            CheckIfListMatch(ElementsByXPath(Registros), reg.Split(','));
+            // CheckIfListMatch(ElementsByCss(Registros), reg.Split(','));
+
+            CheckIfListContainsText(FindByXPath(string.Format(Registros, reg)), reg);
         }
 
         public void VerificarListaDeAaZ(string list)
@@ -56,6 +58,11 @@ namespace ValTestAT
             //CheckIfElementNotExists(ElementsByXPath(PaginasProdutos, false));
             CheckIfElementNotExists(ElementsByXPath(string.Format(Paginas, pag), false));
 
+        }
+
+        public void VerificarResultadoDaBuscaInvalida(string inv)
+        {
+            CheckIfListMatch(ElementsByCss(MensagemErro), inv.Split(','));
         }
     }
 }

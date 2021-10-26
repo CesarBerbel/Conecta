@@ -124,22 +124,22 @@ this.ScenarioInitialize(scenarioInfo);
 testRunner.Given("que eu acesse a campanha \"/pasteur\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 9
-testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Médica e Farmacêutica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico e Farmacêutico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 10
 testRunner.When("eu valido com \"Medico (CRM),SC,11655,testemedico@grr.la\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 11
+#line 12
 testRunner.Then("devo ver a mensagem de conta identificada \"Olá, identificamos que você já tem uma" +
                         " conta!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 12
+#line 13
 testRunner.When("preencho o campo Adicionar Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 13
+#line 14
 testRunner.And("clico em Finalizar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 14
+#line 15
 testRunner.Then("eu visualizo a campanha \"/farmaceuticos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -154,7 +154,7 @@ testRunner.Then("eu visualizo a campanha \"/farmaceuticos\"", ((string)(null)), 
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tentar acessar campanha exclusiva, utilizando perfil sem permissão", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 16
+#line 17
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -174,16 +174,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 17
+#line 18
 testRunner.Given("que eu acesse a campanha \"/pasteur\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 18
-testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Médica e Farmacêutica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
-#line hidden
 #line 19
-testRunner.When("eu valido com \"Dentista (CRO),BA,6666666,dentista06@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico e Farmacêutico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 20
+testRunner.When("eu valido com \"Nutricionista (CRN),BA,6666666,nutricionista@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 21
 testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo é exclusivo para Médic" +
                         "o e Farmacêutico.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
@@ -199,7 +199,7 @@ testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo �
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tentar acessar campanha exclusiva para outro perfil, a partir do SoftLogin", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 22
+#line 23
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -219,28 +219,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 23
+#line 24
 testRunner.Given("que eu acesse a campanha \"/dupilumabe-dermatite-atopica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 24
-testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Odontológica e Médica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
-#line hidden
 #line 25
-testRunner.When("eu valido com \"Dentista (CRO),BA,6666601,autoQA@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
-#line 26
-testRunner.And("clico em Deixar para depois", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 27
-testRunner.Then("eu visualizo a campanha \"/dupilumabe-dermatite-atopica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
-#line hidden
-#line 28
 testRunner.Given("que eu retorne para home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 29
+#line 28
 testRunner.When("eu acesso a campanha \"/pasteur\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 30
+#line 29
 testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo é exclusivo para Médic" +
                         "o e Farmacêutico.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
@@ -256,7 +247,7 @@ testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo �
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar e Retirar Campanha dos favoritos", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 32
+#line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -276,37 +267,37 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 33
+#line 32
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 34
+#line 33
 testRunner.And("eu logue como \"Dentista\" com o e-mail \"dentista06@teste.com\" e a senha \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 35
+#line 34
 testRunner.Then("devo ver meu nome \"Dentista\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 36
+#line 35
 testRunner.When("eu acesso a campanha \"/dupilumabe-dermatite-atopica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 37
+#line 36
 testRunner.And("eu clico em Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 38
+#line 37
 testRunner.Then("eu devo ver a mensagem dos favoritos \"Campanha adicionada à sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 39
+#line 38
 testRunner.When("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 40
+#line 39
 testRunner.And("eu clico em Itens Salvos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 41
+#line 40
 testRunner.Then("eu devo ser direcionado para página de Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 42
+#line 41
 testRunner.When("eu clico em Remover item dos favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 43
+#line 42
 testRunner.Then("eu devo ver a mensagem dos favoritos \"Item removido da sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -321,7 +312,7 @@ testRunner.Then("eu devo ver a mensagem dos favoritos \"Item removido da sua ár
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tentar adicionar Campanha aos favoritos sem estar logado no sistema", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 45
+#line 44
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -341,19 +332,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 46
+#line 45
 testRunner.Given("que eu acesse a campanha \"/dupilumabe-dermatite-atopica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 47
+#line 46
 testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Odontológica e Médica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 48
+#line 47
 testRunner.When("clico em Fechar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 49
+#line 48
 testRunner.And("eu clico em Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 50
+#line 49
 testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Odontológica e Médica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -368,7 +359,7 @@ testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Od
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tentar adicionar Campanha aos favoritos com SoftLogin", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 52
+#line 51
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -388,16 +379,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 53
+#line 52
 testRunner.Given("que eu acesse a campanha \"/dupilumabe-dermatite-atopica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 54
+#line 53
 testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Odontológica e Médica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 55
-testRunner.When("eu valido com \"Farmacêutico (CRF),BA,6666601,autoQA@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line 54
+testRunner.When("eu valido com \"Nutricionista (CRN),BA,7912345678,medico04@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 56
+#line 55
 testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo é exclusivo para Denti" +
                         "sta e Médico.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
@@ -413,7 +404,7 @@ testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo �
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Compartilhar Campanha nas redes sociais e Copiar Link", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 58
+#line 57
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -433,23 +424,23 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 59
+#line 58
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 60
+#line 59
 testRunner.And("eu logue como \"farmaceutico\" com o e-mail \"farma_ce@teste.com\" e a senha \"123456\"" +
                         "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 61
+#line 60
 testRunner.Then("devo ver meu nome \"farmaceutico\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 62
+#line 61
 testRunner.When("eu acesso a campanha \"/pasteur\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 63
+#line 62
 testRunner.And("eu clico em Compartilhar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 64
+#line 63
 testRunner.Then("devo ver os links \"Whatsapp,Facebook,LinkedIn,Copiar link\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }

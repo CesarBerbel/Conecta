@@ -134,8 +134,8 @@ namespace BaseProject.Pages.MeuPerfil
 
             //EnterTextInto(WaitTools.WaitForVisibility("xpath", CampoCidade), cid);
 
-            //Thread.Sleep(TimeSpan.FromSeconds(3));
-            //PerformClick(FindByXPath(CampoCidade));
+            Thread.Sleep(TimeSpan.FromSeconds(1));
+            PerformClick(FindByXPath(CampoCidade));
         }
 
         public void SelecionarCidade(string cid)

@@ -130,8 +130,8 @@ testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((Tec
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 11
-testRunner.When("preencho o Cadastro completo com \"Dentista (CRO),BA,Auto,QA,7912345678,123456,123" +
-                        "456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("preencho o Cadastro completo com \"Nutricionista (CRN),BA,Auto,QA,7912345678,12345" +
+                        "6,123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 12
 testRunner.Then("devo ver a mensagem de conta criada com sucesso \"Sua conta foi criada com sucesso" +
@@ -179,23 +179,11 @@ testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((Tec
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 18
-testRunner.When("preencho os dados iniciais do Cadastro com \"Dentista (CRO),BA,1111111,abcd@automa" +
-                        "cao.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("preencho os dados iniciais do Cadastro com \"Médico (CRM),BA,4163,abc12345@testing" +
+                        ".com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 19
-testRunner.And("preencho o campo email com \"dentista01@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 20
-testRunner.And("clico em Prosseguir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 21
-testRunner.And("preencho o campo Adicionar Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 22
-testRunner.And("clico em Finalizar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 23
-testRunner.Then("devo ver meu nome \"Dentista\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.Then("devo ver a mensagens de erro \"O CRM BA4163 está vinculado ao email:\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -209,7 +197,7 @@ testRunner.Then("devo ver meu nome \"Dentista\" na Home", ((string)(null)), ((Te
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Criar Conta utilizando Email ja cadastrado", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 25
+#line 21
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -229,20 +217,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 26
+#line 22
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 27
+#line 23
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 28
+#line 24
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 29
-testRunner.When("preencho os dados iniciais do Cadastro com \"Dentista (CRO),BA,3921,maria@teste.co" +
-                        "m\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line 25
+testRunner.When("preencho os dados iniciais do Cadastro com \"Nutricionista (CRN),BA,7912345678,med" +
+                        "ico04@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 30
+#line 26
 testRunner.Then("devo ver as mensagens de erro \"Este email já está cadastrado\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -257,7 +245,7 @@ testRunner.Then("devo ver as mensagens de erro \"Este email já está cadastrado
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tentar criar conta utilizando um Numero de registro invalido", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 32
+#line 28
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -277,20 +265,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 33
+#line 29
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 34
+#line 30
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 35
+#line 31
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 36
+#line 32
 testRunner.When("preencho os dados iniciais do Cadastro com \"Médico (CRM),BA,1234567,abc12345@test" +
                         "ing.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 37
+#line 33
 testRunner.Then("devo ver as mensagens de erro \"CRM inválido no CFM\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -305,7 +293,7 @@ testRunner.Then("devo ver as mensagens de erro \"CRM inválido no CFM\"", ((stri
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verificar obrigatoriedade dos campos ao criar conta", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 39
+#line 35
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -325,19 +313,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 40
+#line 36
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 41
+#line 37
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 42
+#line 38
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 43
+#line 39
 testRunner.When("clico em Continuar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 44
+#line 40
 testRunner.Then("devo ver as mensagens de erro \"Escolher Estado,Favor informar seu número de regis" +
                         "tro,Email inválido,Marcar o aceite\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
@@ -353,7 +341,7 @@ testRunner.Then("devo ver as mensagens de erro \"Escolher Estado,Favor informar 
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tentar criar conta com Celular invalido", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 46
+#line 42
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -373,20 +361,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 47
+#line 43
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 48
+#line 44
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 49
+#line 45
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 50
-testRunner.When("preencho o Cadastro completo com \"Dentista (CRO),BA,Dentist,AutoQA,00000,123456,1" +
-                        "23456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line 46
+testRunner.When("preencho o Cadastro completo com \"Nutricionista (CRN),BA,Auto,QA,99123,123456,123" +
+                        "456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 51
+#line 47
 testRunner.Then("devo ver as mensagens de erro \"Celular inválido\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -401,7 +389,7 @@ testRunner.Then("devo ver as mensagens de erro \"Celular inválido\"", ((string)
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Criar conta com usuario Validado (SoftLogin)", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 53
+#line 49
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -421,46 +409,46 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 54
+#line 50
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 55
+#line 51
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 56
+#line 52
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 57
+#line 53
 testRunner.When("preencho o Cadastro com registro e email aleatórios \"Nutricionista (CRN),BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 58
-testRunner.Then("eu devo ver a mensagem de finalizacao de cadastro \"Aproveitando seus dados precis" +
-                        "amos apenas de quatro informações:\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line 54
+testRunner.Then("eu devo ver a mensagem de finalizacao de cadastro \"Para prosseguirmos, precisamos" +
+                        " de mais algumas informações suas. Não se preocupe, levará menos de 1 minuto!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 59
+#line 55
 testRunner.When("clico em Fechar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 60
+#line 56
 testRunner.And("eu clico no menu profile validado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 61
+#line 57
 testRunner.And("clico em Criar conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 62
+#line 58
 testRunner.And("preencho o email aleatório", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 63
+#line 59
 testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 64
-testRunner.Then("eu devo ver a mensagem de finalizacao de cadastro \"Aproveitando seus dados precis" +
-                        "amos apenas de quatro informações:\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line 60
+testRunner.Then("eu devo ver a mensagem de finalizacao de cadastro \"Para prosseguirmos, precisamos" +
+                        " de mais algumas informações suas. Não se preocupe, levará menos de 1 minuto!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 65
+#line 61
 testRunner.When("preencho os dados finais do cadastro com \"Nutri,AutoQA,79987165507,123456,123456\"" +
                         "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 66
+#line 62
 testRunner.Then("devo ver a mensagem de conta criada com sucesso \"Sua conta foi criada com sucesso" +
                         "!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden

@@ -37,7 +37,7 @@ namespace BaseProject.Steps
 		public void QuandoEuClicoEmItensSalvos()
 		{
 			GetInstance<HomePage>().ClicarItensSalvos();
-		}
+        }
 
 		[Given(@"clico em Criar Conta")]
 		public void DadoClicoEmCriarConta()
@@ -48,7 +48,8 @@ namespace BaseProject.Steps
         [When(@"clico em Criar conta")]
         public void QuandoClicoEmCriarConta()
         {
-            GetInstance<HomePage>().ClicarCriarContaValidado();
+           // GetInstance<HomePage>().ClicarCriarContaValidado();
+            GetInstance<HomePage>().ClicarCriarConta();
         }
 
         [When(@"eu clico em Meu Perfil")]

@@ -126,13 +126,13 @@ Cenario: Adicionar Interesse e Especialidade
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Criar Conta
-Quando escolho tipo de HCP "Dentista (CRO)"
+Quando escolho tipo de HCP "Medico (CRM)"
 E escolho o Estado "BA"
 E preencho o campo Número do registro com registro aleatório
 E preencho o Email com email aleatório
 E marco a opcao Li e concordo com os Termos e Condições
 E clico em Continuar
-Quando Eu preencho o campo Nome com "Dentista"
+Quando Eu preencho o campo Nome com "Medico"
 E preencho o campo Sobrenome com "Automacao"
 E eu preencho o Celular com "79987165507"
 E preencho o campo Adicionar Senha com "123456"
@@ -143,7 +143,7 @@ Quando clico em Personalizar
 Então devo ser direcionado para pagina de Perfil
 Quando eu clico em Especialidades e Interesses
 Então devo ver a Mensagem de personalização da conta "Finalize a personalização da sua conta. Selecione uma especialidade primária e selecione um ou mais interesses."
-Quando eu escolho a Especialidade primária "Endodontia"
+Quando eu escolho a Especialidade primária "Cardiologia"
 E eu escolho a Especialidade secundária "Pediatria"
 E seleciono em interesses "Amostras de Medicamentos"
 E eu clico em Salvar
@@ -221,10 +221,6 @@ Quando eu clico em Minha conta
 E seleciono "Outra" em Empresa onde trabalha
 E eu clico em Salvar
 Então devo ver a mensagem de obrigatoriedade "Cidade inválida"
-Quando Preencho o campo cidade com "Cabi"
-E seleciono a cidade "Cabixi - RO"  
-E eu clico em Salvar
-Então devo ver a mensagem de obrigatoriedade "Local inválido"
 
 Cenario: Validar a obrigatoriedade do campo Empresa onde trabalha
 Dado que eu acesse o sistema

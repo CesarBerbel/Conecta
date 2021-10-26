@@ -6,8 +6,9 @@ Funcionalidade:Campanhas
 
 Cenario: Acessar campanha exclusiva
 Dado que eu acesse a campanha "/pasteur"
-Entao devo ver a mensagem "Conteúdo exclusivo para a(s) área(s) Médica e Farmacêutica" 
+Entao devo ver a mensagem "Conteúdo exclusivo para Médico e Farmacêutico" 
 Quando eu valido com "Medico (CRM),SC,11655,testemedico@grr.la" 
+#E fecho a modal
 Entao devo ver a mensagem de conta identificada "Olá, identificamos que você já tem uma conta!"
 Quando preencho o campo Adicionar Senha com "123456"
 E clico em Finalizar
@@ -15,16 +16,14 @@ Entao eu visualizo a campanha "/farmaceuticos"
 
 Cenario: Tentar acessar campanha exclusiva, utilizando perfil sem permissão
 Dado que eu acesse a campanha "/pasteur"
-Entao devo ver a mensagem "Conteúdo exclusivo para a(s) área(s) Médica e Farmacêutica" 
-Quando eu valido com "Dentista (CRO),BA,6666666,dentista06@teste.com" 
+Entao devo ver a mensagem "Conteúdo exclusivo para Médico e Farmacêutico" 
+Quando eu valido com "Nutricionista (CRN),BA,6666666,nutricionista@teste.com" 
 Entao devo ver a mensagem de acesso exclusivo "Olá,Esse conteúdo é exclusivo para Médico e Farmacêutico."
 
 Cenario: Tentar acessar campanha exclusiva para outro perfil, a partir do SoftLogin
 Dado que eu acesse a campanha "/dupilumabe-dermatite-atopica"
-Entao devo ver a mensagem "Conteúdo exclusivo para a(s) área(s) Odontológica e Médica" 
-Quando eu valido com "Dentista (CRO),BA,6666601,autoQA@teste.com" 
-E clico em Deixar para depois
-Entao eu visualizo a campanha "/dupilumabe-dermatite-atopica"  
+Entao devo ver a mensagem "Conteúdo exclusivo para Médico" 
+
 Dado que eu retorne para home
 Quando eu acesso a campanha "/pasteur"
 Entao devo ver a mensagem de acesso exclusivo "Olá,Esse conteúdo é exclusivo para Médico e Farmacêutico."
@@ -52,7 +51,7 @@ Entao devo ver a mensagem "Conteúdo exclusivo para a(s) área(s) Odontológica 
 Cenario: Tentar adicionar Campanha aos favoritos com SoftLogin 
 Dado que eu acesse a campanha "/dupilumabe-dermatite-atopica"
 Entao devo ver a mensagem "Conteúdo exclusivo para a(s) área(s) Odontológica e Médica" 
-Quando eu valido com "Farmacêutico (CRF),BA,6666601,autoQA@teste.com" 
+Quando eu valido com "Nutricionista (CRN),BA,7912345678,medico04@teste.com" 
 Entao devo ver a mensagem de acesso exclusivo "Olá,Esse conteúdo é exclusivo para Dentista e Médico." 
 
 Cenario: Compartilhar Campanha nas redes sociais e Copiar Link

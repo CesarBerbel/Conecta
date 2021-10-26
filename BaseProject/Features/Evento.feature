@@ -28,8 +28,8 @@ Entao devo ver a mensagem de acesso exclusivo "Olá,Esse conteúdo é exclusivo 
 
 Cenario: Tentar acessar evento exclusivo para outro perfil, a partir do SoftLogin 
 Dado que eu acesse a campanha "/dits"
-Entao devo ver a mensagem "Conteúdo exclusivo para a(s) área(s) Médica e Farmacêutica"
-Quando eu valido com "Dentista (CRO),BA,6666666,dentista06@teste.com" 
+Entao devo ver a mensagem "Conteúdo exclusivo para Médico e Farmacêutico"
+Quando eu valido com "Nutricionista (CRN),BA,6941,nutri01@teste.com" 
 Entao devo ver a mensagem de acesso exclusivo "Olá,Esse conteúdo é exclusivo para Médico e Farmacêutico."
 Quando eu acesso o evento "/evento-zinpass-eze-2021-automacao-data-futura"
 Entao devo ver a mensagem de acesso exclusivo "Olá,Esse conteúdo é exclusivo para Médico." 
