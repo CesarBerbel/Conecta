@@ -308,13 +308,13 @@ testRunner.When("eu clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Tabl
 testRunner.And("clico em Esqueceu sua senha?", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 45
-testRunner.And("escolho tipo de HCP \"Dentista (CRO)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("escolho tipo de HCP \"Farmaceutico (CRF)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 46
-testRunner.And("escolho o Estado \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("escolho o Estado \"RS\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 47
-testRunner.And("preencho o campo Número do registro com \"21660\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho o campo Número do registro com \"1234\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 48
 testRunner.And("clico em Prosseguir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -326,13 +326,13 @@ testRunner.Then("eu devo ver a tela de envio de senha com o titulo \"Esqueci min
 testRunner.When("eu clico em Não tenho mais acesso a este email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 51
-testRunner.Then("eu devo ver o final do telefone \"2222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+testRunner.Then("eu devo ver o final do telefone \"7777\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 52
-testRunner.When("eu preencho o campo Celular com \"22222222222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu preencho o campo Celular com \"48997777777\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 53
-testRunner.And("eu preencho o campo Novo email com \"dentista@servidor.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("eu preencho o campo Novo email com \"medicorenovaemail@servidor.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 54
 testRunner.And("clico em Habilitar novo email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -385,13 +385,13 @@ testRunner.When("eu clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Tabl
 testRunner.When("clico em Esqueceu sua senha?", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 62
-testRunner.And("escolho tipo de HCP \"Dentista (CRO)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("escolho tipo de HCP \"Farmaceutico (CRF)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 63
-testRunner.And("escolho o Estado \"RR\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("escolho o Estado \"RS\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 64
-testRunner.And("preencho o campo Número do registro com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho o campo Número do registro com \"1234\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 65
 testRunner.And("clico em Prosseguir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -403,10 +403,10 @@ testRunner.Then("eu devo ver a tela de envio de senha com o titulo \"Esqueci min
 testRunner.When("eu clico em Não tenho mais acesso a este email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 68
-testRunner.Then("eu devo ver o final do telefone \"2222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+testRunner.Then("eu devo ver o final do telefone \"7777\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 69
-testRunner.When("eu preencho o campo Celular com \"22222222222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu preencho o campo Celular com \"48997777777\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 70
 testRunner.When("eu preencho o campo Novo email com \"abc123.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
@@ -462,13 +462,13 @@ testRunner.When("eu clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Tabl
 testRunner.When("clico em Esqueceu sua senha?", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 79
-testRunner.And("escolho tipo de HCP \"Dentista (CRO)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("escolho tipo de HCP \"Farmaceutico (CRF)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 80
-testRunner.And("escolho o Estado \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("escolho o Estado \"RS\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 81
-testRunner.And("preencho o campo Número do registro com \"21660\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho o campo Número do registro com \"1234\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 82
 testRunner.And("clico em Prosseguir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -480,10 +480,10 @@ testRunner.Then("eu devo ver a tela de envio de senha com o titulo \"Esqueci min
 testRunner.When("eu clico em Não tenho mais acesso a este email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 85
-testRunner.Then("eu devo ver o final do telefone \"2222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+testRunner.Then("eu devo ver o final do telefone \"7777\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 86
-testRunner.When("eu preencho o campo Celular com \"22222222222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu preencho o campo Celular com \"48997777777\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 87
 testRunner.When("eu preencho o campo Novo email com \"maria@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");

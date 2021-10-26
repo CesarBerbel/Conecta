@@ -42,15 +42,15 @@ Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 Quando eu clico em Entrar
 E clico em Esqueceu sua senha?
-E escolho tipo de HCP "Dentista (CRO)"
-E escolho o Estado "BA"
-E preencho o campo Número do registro com "21660"
+E escolho tipo de HCP "Farmaceutico (CRF)"
+E escolho o Estado "RS"
+E preencho o campo Número do registro com "1234"
 E clico em Prosseguir
 Entao eu devo ver a tela de envio de senha com o titulo "Esqueci minha senha"
 Quando eu clico em Não tenho mais acesso a este email
-Entao eu devo ver o final do telefone "2222"
-Quando eu preencho o campo Celular com "22222222222"
-E eu preencho o campo Novo email com "dentista@servidor.com"
+Entao eu devo ver o final do telefone "7777"
+Quando eu preencho o campo Celular com "48997777777"
+E eu preencho o campo Novo email com "medicorenovaemail@servidor.com"
 E clico em Habilitar novo email 
 Entao eu devo ver a tela de envio de senha com o titulo "Esqueci minha senha"
  
@@ -59,14 +59,14 @@ Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 Quando eu clico em Entrar
 Quando clico em Esqueceu sua senha?
-E escolho tipo de HCP "Dentista (CRO)"
-E escolho o Estado "RR"
-E preencho o campo Número do registro com "123456"
+E escolho tipo de HCP "Farmaceutico (CRF)"
+E escolho o Estado "RS"
+E preencho o campo Número do registro com "1234"
 E clico em Prosseguir
 Entao eu devo ver a tela de envio de senha com o titulo "Esqueci minha senha"
 Quando eu clico em Não tenho mais acesso a este email
-Entao eu devo ver o final do telefone "2222"
-Quando eu preencho o campo Celular com "22222222222"
+Entao eu devo ver o final do telefone "7777"
+Quando eu preencho o campo Celular com "48997777777"
 Quando eu preencho o campo Novo email com "abc123.com"
 E clico em Habilitar novo email
 Entao devo ver as mensagens de erro "Email inválido"
@@ -76,14 +76,14 @@ Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 Quando eu clico em Entrar
 Quando clico em Esqueceu sua senha?
-E escolho tipo de HCP "Dentista (CRO)"
-E escolho o Estado "BA"
-E preencho o campo Número do registro com "21660"
+E escolho tipo de HCP "Farmaceutico (CRF)"
+E escolho o Estado "RS"
+E preencho o campo Número do registro com "1234"
 E clico em Prosseguir
 Entao eu devo ver a tela de envio de senha com o titulo "Esqueci minha senha"
 Quando eu clico em Não tenho mais acesso a este email
-Entao eu devo ver o final do telefone "2222"
-Quando eu preencho o campo Celular com "22222222222"
+Entao eu devo ver o final do telefone "7777"
+Quando eu preencho o campo Celular com "48997777777"
 Quando eu preencho o campo Novo email com "maria@teste.com"
 E clico em Habilitar novo email
 Entao devo ver as mensagens de erro "Já existe um usuário com este e-mail"

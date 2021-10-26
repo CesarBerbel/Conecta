@@ -9,8 +9,8 @@ Cenario: Realizar Treinamento
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Criar Conta
-Quando preencho o Cadastro com registro e email aleatórios "Dentista (CRO),BA" 
-E preencho os dados finais do cadastro com "Doctor,Angry,7912345678,123456,123456"
+Quando preencho o Cadastro com registro e email aleatórios "Nutricionista (CRN),BA" 
+E preencho os dados finais do cadastro com "Nitri,Angry,7912345678,123456,123456"
 E eu clico em Deixar para depois
 Então devo ver meu nome "Doctor" na Home 
 Quando eu acesso o Treinamento "/automation/automation-test-crm"

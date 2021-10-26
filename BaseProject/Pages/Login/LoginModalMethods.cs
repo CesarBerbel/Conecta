@@ -76,7 +76,8 @@ namespace ValTestAT
                 
         public void ClicarEmProsseguir()
 		{
-			Click(FindById(BotaoProsseguir));
+            Click(FindByXPath(FecharModal));
+            Click(FindById(BotaoProsseguir));
 		}
 
 		public void VerificarMensagemContaJaCriada(string msg)

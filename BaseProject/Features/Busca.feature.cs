@@ -139,7 +139,7 @@ testRunner.And("preencho o campo Buscar com \"dipirona\"", ((string)(null)), ((T
 testRunner.And("clico em Pesquisar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 16
-testRunner.Then("eu devo visualizar os registros \"Dorflex®,Novalgina®\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.Then("eu devo visualizar os registros \"Dorflex®\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -251,8 +251,7 @@ testRunner.And("preencho o campo Buscar com \"os-cal\"", ((string)(null)), ((Tec
 testRunner.And("clico em Pesquisar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 36
-testRunner.Then("eu devo visualizar os registros \"Mobility Os-cal,Os-cal® 500,Os-cal® 500 + D,Os-c" +
-                        "al® CIT,Os-cal® D 1000,Os-cal® D 400\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.Then("eu devo visualizar os registros \"Mobility Os-cal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -305,8 +304,8 @@ testRunner.When("preencho o campo Buscar com \"instruções da automação\"", (
 testRunner.And("clico em Pesquisar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 45
-testRunner.Then("eu devo visualizar os registros \"Evento Zinpass Eze 2021 - Automação Data Futura," +
-                        "automacao-ao-vivo\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.Then("eu devo visualizar os registros \"Evento Zinpass Eze 2021 - Automação Data Futura\"" +
+                        "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -454,6 +453,59 @@ testRunner.Then("eu não devo visualizar as páginas de \"Produtos\"", ((string)
 #line hidden
 #line 68
 testRunner.And("eu não devo visualizar as páginas de \"Eventos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Pesquisar por um termo inexistente, deslogado do sistema")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Busca")]
+        public virtual void PesquisarPorUmTermoInexistenteDeslogadoDoSistema()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Pesquisar por um termo inexistente, deslogado do sistema", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 71
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 72
+testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line hidden
+#line 73
+testRunner.When("eu clico em Busca", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 74
+testRunner.And("preencho o campo Buscar com \"Vingadores\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 75
+testRunner.And("clico em Pesquisar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 76
+testRunner.Then("eu não devo visualizar as páginas de \"Produtos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+#line hidden
+#line 77
+testRunner.And("eu não devo visualizar as páginas de \"Eventos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 78
+testRunner.And("devo ver a seguinte mensagem \"Nenhum resultado para \"Vingadores\"\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
             }
             this.ScenarioCleanup();

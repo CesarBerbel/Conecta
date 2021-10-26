@@ -61,6 +61,10 @@ namespace BaseProject.Steps
             GetInstance<BuscaPage>().VerificarVisibilidadePaginas(pag);
         }
 
-
+        [Then(@"devo ver a seguinte mensagem ""(.*)""")]
+        public void EntaoDevoVerASeguinteMensagemVingadores(string inv)
+        {
+            GetInstance<BuscaPage>().VerificarResultadoDaBuscaInvalida(inv);
+        }
     }
 }

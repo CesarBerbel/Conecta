@@ -10,6 +10,7 @@
         private readonly string Paginas = "//div[contains(@class,'modal-search__category')]/div[text()='{0}']";           
         private readonly string ListaVazia = "//div[text()='Nenhum resultado para \"{0}\"']";
         private readonly string CampoBuscaFooter = "//button[text()='Busca']";
+        private readonly string MensagemErro = ".modal-search__grouped-products";
 
     }
 }

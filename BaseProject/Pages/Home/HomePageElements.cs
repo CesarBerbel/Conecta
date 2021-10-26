@@ -12,9 +12,11 @@
         private readonly string MensagemBoasVindas = "//span[contains(text(),'{0}')]";        
         private readonly string ItensSalvosLink = "//a[@class='c-text menu-profile__panel-item menu-profile__panel-item--link menu-profile__panel-item--text-left']";
 		private readonly string MenuMeuPerfil = "Meu Perfil";
-        private readonly string MenuCalendario = "//p[text()='{0}']";
+        //private readonly string MenuCalendario = "//p[text()='{0}']";
+        private readonly string MenuCalendario = "//p[text()='Eventos']";
         private readonly string MenuBusca = "//p[contains(@class,'c-navbar__item c-text c-text--underline c-ml-40')]";
 
         
     }
 }
+

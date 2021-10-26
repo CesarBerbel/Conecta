@@ -11,7 +11,8 @@
         private readonly string CampoEmail = "//input[contains(@id, 'email')]";
 		private readonly string CampoSenha = "//input[contains(@id, 'password')]";
 		private readonly string BotaoProsseguir = "sf-email-different";
-        private readonly string BotaoDeixarParaDepois = "sf-create-account-after";    
+        private readonly string FecharModal = "/ html / body / div[4] / div[2] / div / div[1] / button / img";
+        private readonly string BotaoDeixarParaDepois = "sf-login-after";    
 		private readonly string MensagemContaJaCriada = "div[class='c-text c-text--h3 c-modal-sf-hcp__title'] strong";
         private readonly string MensagemValidacao = "//div[@id='generic-error']";
         private readonly string LinkEsqueciSenha = "forgot-pass";

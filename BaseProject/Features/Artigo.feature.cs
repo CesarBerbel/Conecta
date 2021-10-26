@@ -125,11 +125,10 @@ testRunner.Given("que eu acesso artigo \"/boletim-informacoes-medicas-servico-de
                         "cinacao-siv\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 9
-testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Médica, Farmacêutica, E" +
-                        "nfermagem e Odontológica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico, Farmacêutico e Enfermeiro\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 10
-testRunner.When("eu valido com \"Dentista (CRO),BA,6666666,dentista06@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu valido com \"Farmacêutico (CRF),BA,4444444,farma04@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 11
 testRunner.And("preencho o campo Adicionar Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -284,7 +283,7 @@ testRunner.And("eu logue como \"Medico\" com o e-mail \"testemedico@grr.la\" e a
 testRunner.Then("devo ver meu nome \"Medico\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
 #line 34
-testRunner.When("eu acesso o artigo \"/4-consenso-brasileiro-rinites\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu acesso o artigo \"/escore-febrasgo-2021\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 35
 testRunner.And("eu clico em Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");

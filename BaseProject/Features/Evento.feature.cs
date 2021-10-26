@@ -235,10 +235,10 @@ this.ScenarioInitialize(scenarioInfo);
 testRunner.Given("que eu acesse a campanha \"/dits\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 31
-testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para a(s) área(s) Médica e Farmacêutica\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico e Farmacêutico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 32
-testRunner.When("eu valido com \"Dentista (CRO),BA,6666666,dentista06@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu valido com \"Nutricionista (CRN),BA,6941,nutri01@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 33
 testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo é exclusivo para Médic" +

@@ -47,7 +47,7 @@ namespace ValTestAT
 
 		public void ClicarContinuar()
 		{
-			Click(FindById(BotaoContinuar));
+            Click(FindById(BotaoContinuar));
 		}
       
         public void PreencherNome(string nome)
@@ -82,6 +82,11 @@ namespace ValTestAT
         public void VerificarMensagemObrigatoria(string msg)
         {
             CheckIfListMatch(ElementsByXPath(MensagemObrigatoria), msg.Split(','));
+        }
+
+        public void VerificarMensagemErro(string msg)
+        {
+            CheckIfListMatch(ElementsByXPath(MensagemErro), msg.Split(','));
         }
         public void VerificarMensagemFinalCadastro(string msg)
         {

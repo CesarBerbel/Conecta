@@ -10,12 +10,9 @@ namespace BaseProject.Steps
         [Given(@"que eu acesse a campanha ""(.*)""")]
         public void DadoQueEuAcesseACampanha(string campanha)
         {
-
             GetInstance<CampanhaPage>().AcessarCampanha(campanha);
             GetInstance<LoginModal>().RealizarPreLogin();
-
         }
-
 
         [When(@"eu acesso a campanha ""(.*)""")]
         public void QuandoEuAcessoACampanha(string url)

@@ -6,8 +6,8 @@ Funcionalidade: Artigo
 
 Cenario: Acessar artigo exclusivo
 Dado que eu acesso artigo "/boletim-informacoes-medicas-servico-de-informacao-sobre-vacinacao-siv"
-Entao devo ver a mensagem "Conteúdo exclusivo para a(s) área(s) Médica, Farmacêutica, Enfermagem e Odontológica" 
-Quando eu valido com "Dentista (CRO),BA,6666666,dentista06@teste.com" 
+Entao devo ver a mensagem "Conteúdo exclusivo para Médico, Farmacêutico e Enfermeiro"
+Quando eu valido com "Farmacêutico (CRF),BA,4444444,farma04@teste.com" 
 E preencho o campo Adicionar Senha com "123456"
 Quando clico em Finalizar
 Entao eu visualizo o artigo "/boletim-informacoes-medicas-servico-de-informacao-sobre-vacinacao-siv"
@@ -31,7 +31,7 @@ Cenario: Adicionar e Retirar Artigo dos favoritos
 Dado que eu acesse o sistema
 E eu logue como "Medico" com o e-mail "testemedico@grr.la" e a senha "123456"
 Então devo ver meu nome "Medico" na Home 
-Quando eu acesso o artigo "/4-consenso-brasileiro-rinites"
+Quando eu acesso o artigo "/escore-febrasgo-2021"
 E eu clico em Favoritos
 Entao eu devo ver a mensagem dos favoritos "Artigo adicionado à sua área pessoal"
 Quando eu clico no menu profile Logado para expandir

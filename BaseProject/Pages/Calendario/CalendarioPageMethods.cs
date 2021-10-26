@@ -19,7 +19,7 @@ namespace ValTestAT
 
         public void ClicarBotaoAoVivo()
         {
-            JClick(FindByXPath(BotaoAoVivo));
+            Click(FindByCss(BotaoAoVivo));
         }
 
         public void ClicarBotaoAdicionarCalendario()

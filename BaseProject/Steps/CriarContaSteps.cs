@@ -84,7 +84,7 @@ namespace BaseProject.Steps
         [When(@"clico em Finalizar")]
 		public void QuandoClicoEmFinalizar()
 		{
-			GetInstance<CriarConta>().ClicarContinuar();
+           GetInstance<CriarConta>().ClicarContinuar();
 		}
 
 		[Then(@"devo ver a mensagem de conta criada com sucesso ""(.*)""")]
@@ -99,7 +99,12 @@ namespace BaseProject.Steps
             GetInstance<CriarConta>().VerificarMensagemObrigatoria(msg);
         }
 
-
+       [Then(@"devo ver a mensagens de erro ""(.*)""")]
+        public void EntaoDevoVerAMensagensDeErro(string msg)
+        {
+            GetInstance<CriarConta>().VerificarMensagemErro(msg);
+        }
+        
         [When(@"eu valido com ""(.*)""")]
 		public void QuandoEuValidoCom(string userString)
 		{
@@ -130,7 +135,6 @@ namespace BaseProject.Steps
             GetInstance<CriarConta>().FinalizarCadastroConta(userString);
         }
 
-
         [Then(@"eu devo ver a mensagem de finalizacao de cadastro ""(.*)""")]
         public void EntaoEuDevoVerAMensagemDeFinalizacaoDeCadastro(string msg)
         {
@@ -142,6 +146,5 @@ namespace BaseProject.Steps
         {
             GetInstance<CriarConta>().PreencherEmailAleatorio();
         }
-
     }
 }

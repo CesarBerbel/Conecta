@@ -130,10 +130,10 @@ testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((Tec
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 12
-testRunner.When("preencho o Cadastro com registro e email aleatórios \"Dentista (CRO),BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("preencho o Cadastro com registro e email aleatórios \"Nutricionista (CRN),BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 13
-testRunner.And("preencho os dados finais do cadastro com \"Doctor,Angry,7912345678,123456,123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho os dados finais do cadastro com \"Nitri,Angry,7912345678,123456,123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 14
 testRunner.And("eu clico em Deixar para depois", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");

@@ -35,6 +35,10 @@ namespace ValTestAT
 		{
 			CheckIfListMatch(ElementsByXPath(LinksRedesSociais), links.Split(','));
 		}
-             
+
+        public void ClicarFecharModal()
+        {
+            Click(FindByXPath(FecharModal));
+        }
     }
 }

@@ -50,5 +50,16 @@ namespace BaseProject.Steps
             GetInstance<ArtigoPage>().ClicarVoltarHome();
         }
 
+       // [Then(@"eu devo ser direcionado para página de Favoritos")]
+       // public void EntaoEuDevoSerDirecionadoParaPaginaDeFavoritos()
+       // {
+       //     GetInstance<FavoritosPage>().VerificarEstaEmFavoritos();
+       // }
+
+       // [When(@"eu clico em Remover item dos favoritos")]
+       // public void QuandoEuClicoEmRemoverItemDosFavoritos()
+       // {
+      //      GetInstance<FavoritosPage>().RemoverFavoritos();
+       // }
     }
 }

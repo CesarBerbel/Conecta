@@ -71,5 +71,11 @@ namespace BaseProject.Steps
 		{
 			GetInstance<Comum>().VerificarLinksRedeSocial(links);
 		}
-	}
+
+        [When(@"fecho a modal")]
+        public void QuandoFechoAModal()
+        {
+            GetInstance<Comum>().ClicarFecharModal();
+        }
+    }
 }
