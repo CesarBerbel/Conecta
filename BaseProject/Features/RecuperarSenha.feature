@@ -67,7 +67,7 @@ Entao eu devo ver a tela de envio de senha com o titulo "Esqueci minha senha"
 Quando eu clico em Não tenho mais acesso a este email
 Entao eu devo ver o final do telefone "7777"
 Quando eu preencho o campo Celular com "48997777777"
-Quando eu preencho o campo Novo email com "abc123.com"
+Quando eu preencho o campo Novo email com "ABc123@teste"
 E clico em Habilitar novo email
 Entao devo ver as mensagens de erro "Email inválido"
 

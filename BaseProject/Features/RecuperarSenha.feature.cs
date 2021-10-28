@@ -409,7 +409,7 @@ testRunner.Then("eu devo ver o final do telefone \"7777\"", ((string)(null)), ((
 testRunner.When("eu preencho o campo Celular com \"48997777777\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 70
-testRunner.When("eu preencho o campo Novo email com \"abc123.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu preencho o campo Novo email com \"ABc123@teste\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 71
 testRunner.And("clico em Habilitar novo email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");

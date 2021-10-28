@@ -227,8 +227,8 @@ testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((Tec
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 25
-testRunner.When("preencho os dados iniciais do Cadastro com \"Nutricionista (CRN),BA,7912345678,med" +
-                        "ico04@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("preencho os dados iniciais do Cadastro com \"Nutricionista (CRN),BA,1234567,medico" +
+                        "04@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 26
 testRunner.Then("devo ver as mensagens de erro \"Este email já está cadastrado\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");

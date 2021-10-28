@@ -238,16 +238,19 @@ testRunner.Given("que eu acesse a campanha \"/dits\"", ((string)(null)), ((TechT
 testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico e Farmacêutico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 32
-testRunner.When("eu valido com \"Nutricionista (CRN),BA,6941,nutri01@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu valido com \"Nutricionista (CRN),BA,6941,nutri07@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 33
+testRunner.And("preencho os dados finais do cadastro com \"Nutri,Teste,7912345678,123456,123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 34
 testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo é exclusivo para Médic" +
                         "o e Farmacêutico.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 34
+#line 35
 testRunner.When("eu acesso o evento \"/evento-zinpass-eze-2021-automacao-data-futura\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 35
+#line 36
 testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo é exclusivo para Médic" +
                         "o.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
@@ -263,7 +266,7 @@ testRunner.Then("devo ver a mensagem de acesso exclusivo \"Olá,Esse conteúdo �
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tentar adicionar evento aos favoritos, utilizando perfil sem permissão", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 37
+#line 38
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -283,35 +286,35 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 38
+#line 39
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 39
+#line 40
 testRunner.When("eu acesso o evento \"/hipoplay-now-hipotireoidismo-e-o-coracao\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 40
+#line 41
 testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 41
+#line 42
 testRunner.When("eu fecho o modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 42
+#line 43
 testRunner.Given("eu logue como \"Dentista\" com o e-mail \"dentista01@teste.com\" e a senha \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 43
+#line 44
 testRunner.Then("devo ver meu nome \"Dentista\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 44
+#line 45
 testRunner.And("devo ver a mensagem de conteúdo exclusivo \"Olá Dentista, Esse conteúdo é exclusiv" +
                         "o para Médico.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 45
+#line 46
 testRunner.When("eu fecho o modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 46
+#line 47
 testRunner.And("eu clico em Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 47
+#line 48
 testRunner.Then("devo ver a mensagem de conteúdo exclusivo \"Olá Dentista, Esse conteúdo é exclusiv" +
                         "o para Médico.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
@@ -327,7 +330,7 @@ testRunner.Then("devo ver a mensagem de conteúdo exclusivo \"Olá Dentista, Ess
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar e Retirar Evento dos favoritos", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 49
+#line 50
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -347,40 +350,40 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 50
+#line 51
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 51
+#line 52
 testRunner.And("eu logue como \"Medico\" com o e-mail \"testemedico@grr.la\" e a senha \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 52
+#line 53
 testRunner.Then("devo ver meu nome \"Medico\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 53
+#line 54
 testRunner.When("eu acesso o evento \"/hipoplay-now-hipotireoidismo-e-o-coracao\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 54
+#line 55
 testRunner.Then("eu visualizo o evento \"/hipoplay-now-hipotireoidismo-e-o-coracao\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 55
+#line 56
 testRunner.When("eu clico em Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 56
+#line 57
 testRunner.Then("eu devo ver a mensagem dos favoritos \"Evento adicionado à sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 57
+#line 58
 testRunner.When("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 58
+#line 59
 testRunner.And("eu clico em Itens Salvos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 59
+#line 60
 testRunner.Then("eu devo ser direcionado para página de Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 60
+#line 61
 testRunner.When("eu clico em Remover item dos favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 61
+#line 62
 testRunner.Then("eu devo ver a mensagem dos favoritos \"Item removido da sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
@@ -395,7 +398,7 @@ testRunner.Then("eu devo ver a mensagem dos favoritos \"Item removido da sua ár
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Compartilhar evento nas redes sociais e Copiar link", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 63
+#line 64
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -415,25 +418,25 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 64
+#line 65
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 65
+#line 66
 testRunner.And("eu logue como \"Medico\" com o e-mail \"testemedico@grr.la\" e a senha \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 66
+#line 67
 testRunner.Then("devo ver meu nome \"Medico\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 67
+#line 68
 testRunner.When("eu acesso o evento \"/hipoplay-now-hipotireoidismo-e-o-coracao\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 68
+#line 69
 testRunner.Then("eu visualizo o evento \"/hipoplay-now-hipotireoidismo-e-o-coracao\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 69
+#line 70
 testRunner.When("eu clico em Compartilhar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 70
+#line 71
 testRunner.Then("devo ver os links \"Whatsapp,Facebook,LinkedIn,Copiar link\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -448,7 +451,7 @@ testRunner.Then("devo ver os links \"Whatsapp,Facebook,LinkedIn,Copiar link\"", 
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Acessar evento exclusivo data passada", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 72
+#line 73
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -468,32 +471,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 73
+#line 74
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 74
+#line 75
 testRunner.When("eu acesso o evento \"/hipoplay-now-hipotireoidismo-e-o-coracao\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 75
+#line 76
 testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 76
+#line 77
 testRunner.When("eu valido com \"Medico (CRM),BA,5808,medico02@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 77
+#line 78
 testRunner.Then("devo ver a mensagem de conta identificada \"Olá, identificamos que você já tem uma" +
                         " conta!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 78
+#line 79
 testRunner.When("preencho o campo Adicionar Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 79
+#line 80
 testRunner.And("clico em Finalizar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 80
+#line 81
 testRunner.Then("eu visualizo o evento \"/hipoplay-now-hipotireoidismo-e-o-coracao\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 81
+#line 82
 testRunner.And("não devo ver o botão de Adicionar a meu calendário", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
             }
@@ -508,7 +511,7 @@ testRunner.And("não devo ver o botão de Adicionar a meu calendário", ((string
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar evento ao calendário", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 83
+#line 84
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -528,41 +531,41 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 84
+#line 85
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 85
+#line 86
 testRunner.When("eu acesso o evento \"/evento-zinpass-eze-2021-automacao-data-futura\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 86
+#line 87
 testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 87
+#line 88
 testRunner.When("eu valido com \"Medico (CRM),BA,5808,medico02@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 88
+#line 89
 testRunner.Then("devo ver a mensagem de conta identificada \"Olá, identificamos que você já tem uma" +
                         " conta!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 89
+#line 90
 testRunner.When("preencho o campo Adicionar Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 90
+#line 91
 testRunner.And("clico em Finalizar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 91
+#line 92
 testRunner.Then("eu visualizo o evento \"/evento-zinpass-eze-2021-automacao-data-futura\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 92
+#line 93
 testRunner.And("eu visualizo o botão Adicionar a meu calendário", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 93
+#line 94
 testRunner.When("eu clico em \"Adicionar a meu calendário\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 94
+#line 95
 testRunner.And("seleciono a opcao \"Google\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 95
+#line 96
 testRunner.Then("eu vejo o botão \"Adicionado\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -577,7 +580,7 @@ testRunner.Then("eu vejo o botão \"Adicionado\"", ((string)(null)), ((TechTalk.
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Acessar evento dentro do periodo do evento", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 97
+#line 98
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -597,29 +600,29 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 98
+#line 99
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 99
+#line 100
 testRunner.When("eu acesso o evento \"/evento-zinpass-eze-2021-automacao-ao-vivo\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 100
+#line 101
 testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 101
+#line 102
 testRunner.When("eu valido com \"Medico (CRM),BA,0028852,medico01@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 102
+#line 103
 testRunner.Then("devo ver a mensagem de conta identificada \"Olá, identificamos que você já tem uma" +
                         " conta!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 103
+#line 104
 testRunner.When("preencho o campo Adicionar Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 104
+#line 105
 testRunner.And("clico em Finalizar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 105
+#line 106
 testRunner.Then("devo ver o botão \"Ao vivo agora!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }

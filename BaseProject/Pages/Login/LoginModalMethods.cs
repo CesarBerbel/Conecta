@@ -76,7 +76,6 @@ namespace ValTestAT
                 
         public void ClicarEmProsseguir()
 		{
-            Click(FindByXPath(FecharModal));
             Click(FindById(BotaoProsseguir));
 		}
 

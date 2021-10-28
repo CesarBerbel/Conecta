@@ -130,16 +130,16 @@ testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((Tec
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 12
-testRunner.When("preencho o Cadastro com registro e email aleatórios \"Nutricionista (CRN),BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("preencho o Cadastro com registro e email aleatórios \"Medico (CRM),BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 13
-testRunner.And("preencho os dados finais do cadastro com \"Nitri,Angry,7912345678,123456,123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho os dados finais do cadastro com \"Doutor,Angry,7912345678,123456,123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 14
 testRunner.And("eu clico em Deixar para depois", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 15
-testRunner.Then("devo ver meu nome \"Doctor\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.Then("devo ver meu nome \"Doutor\" na Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
 #line 16
 testRunner.When("eu acesso o Treinamento \"/automation/automation-test-crm\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
@@ -233,7 +233,7 @@ testRunner.When("eu acesso o Treinamento \"/automation/automation-test-crm\"", (
 #line hidden
 #line 37
 testRunner.Then("devo ver a mensagem de conteúdo exclusivo \"Olá Farma, Esse conteúdo é exclusivo p" +
-                        "ara Médico e Dentista.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+                        "ara Médico.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -22,7 +22,7 @@ Cenario: Criar Conta utilizando Email ja cadastrado
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Criar Conta
-Quando preencho os dados iniciais do Cadastro com "Nutricionista (CRN),BA,7912345678,medico04@teste.com" 
+Quando preencho os dados iniciais do Cadastro com "Nutricionista (CRN),BA,1234567,medico04@teste.com" 
 Entao devo ver as mensagens de erro "Este email já está cadastrado"
 
 Cenario: Tentar criar conta utilizando um Numero de registro invalido

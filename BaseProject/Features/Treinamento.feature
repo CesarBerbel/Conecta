@@ -9,10 +9,10 @@ Cenario: Realizar Treinamento
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Criar Conta
-Quando preencho o Cadastro com registro e email aleatórios "Nutricionista (CRN),BA" 
-E preencho os dados finais do cadastro com "Nitri,Angry,7912345678,123456,123456"
+Quando preencho o Cadastro com registro e email aleatórios "Medico (CRM),BA" 
+E preencho os dados finais do cadastro com "Doutor,Angry,7912345678,123456,123456"
 E eu clico em Deixar para depois
-Então devo ver meu nome "Doctor" na Home 
+Então devo ver meu nome "Doutor" na Home 
 Quando eu acesso o Treinamento "/automation/automation-test-crm"
 E clico em Abrir Módulo
 E clico para baixar pdf
@@ -34,7 +34,7 @@ Dado que eu acesse o sistema
 E eu logue como "Farma" com o e-mail "farmaceutico01@teste.com" e a senha "123456"
 Então devo ver meu nome "Farma" na Home 
 Quando eu acesso o Treinamento "/automation/automation-test-crm"
-Entao devo ver a mensagem de conteúdo exclusivo "Olá Farma, Esse conteúdo é exclusivo para Médico e Dentista."
+Entao devo ver a mensagem de conteúdo exclusivo "Olá Farma, Esse conteúdo é exclusivo para Médico."
 
 Cenario: Realizar Treinamento com softLogin
 Dado que eu acesse o sistema

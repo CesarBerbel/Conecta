@@ -43,16 +43,17 @@ Entao eu devo ver a mensagem dos favoritos "Item removido da sua área pessoal"
 
 Cenario: Tentar adicionar Campanha aos favoritos sem estar logado no sistema
 Dado que eu acesse a campanha "/dupilumabe-dermatite-atopica"
-Entao devo ver a mensagem "Conteúdo exclusivo para a(s) área(s) Odontológica e Médica" 
+Entao devo ver a mensagem "Conteúdo exclusivo para Médico" 
 Quando clico em Fechar
+######### Não tem favoritos
 E eu clico em Favoritos
 Entao devo ver a mensagem "Conteúdo exclusivo para a(s) área(s) Odontológica e Médica" 
 
 Cenario: Tentar adicionar Campanha aos favoritos com SoftLogin 
 Dado que eu acesse a campanha "/dupilumabe-dermatite-atopica"
-Entao devo ver a mensagem "Conteúdo exclusivo para a(s) área(s) Odontológica e Médica" 
-Quando eu valido com "Nutricionista (CRN),BA,7912345678,medico04@teste.com" 
-Entao devo ver a mensagem de acesso exclusivo "Olá,Esse conteúdo é exclusivo para Dentista e Médico." 
+Entao devo ver a mensagem "Conteúdo exclusivo para Médico" 
+Quando eu valido com "Nutricionista (CRN),BA,7912345678,nutri19@teste.com" 
+Entao devo ver a mensagem de acesso exclusivo "Olá Nutri, Esse conteúdo é exclusivo para Médico." 
 
 Cenario: Compartilhar Campanha nas redes sociais e Copiar Link
 Dado que eu acesse o sistema
